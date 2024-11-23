@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"-->
+<title>Student Enrollment Form</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: content-box;
+}
+header {
+  background-color: #d6dad8;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 5cm; 
+} 
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 1cap;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 40px;
+  width: auto;
+  font-family: serif;
+  border-radius: 1cap; 
+  margin-left: 180px;
+  margin-right: 180px;
+}
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+
+
+</head>
+<body style="margin-left: 400px; margin-right: 400px;">
+    <header>
+    <h1 style="color: rgb(12, 5, 19); font-size: 50px; text-align: center;">Student Enrollment Form </h1>
+    </header>
+    <nav>
+    <h3 style="margin-left: 40px;">Instructions:</h3>
+    <p style="font-size: 15px; margin-left: 60px;">1. Fill in the form fields. <br>2. Check your interests. <br>3. Click "Enroll Now" to submit.<br><br></p>
+    </nav>
+    <article>
+        <form style=" font-size: 20px;">
+            <label for="fname">Full Name:</label><br>
+            <input type="text" id="fname" name="fname" value="" size="90"><br>
+            <label for="Email">Email Address:</label><br>
+            <input type="text" id="Email" name="Email" value="" size="90"><br><br>
+            <label for="quantity">Age:</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="100" step="1" value="0"><br><br>
+            <label for="Sex" style="font-size: 20px;">Sex:</label><br>
+                <form >
+                    <input type="radio" id="male" name="fav_language" value="male">
+                    <label for="male">male</label><br>
+                    <input type="radio" id="female" name="fav_language" value="female">
+                    <label for="female">female</label>
+                </form><br>
+            <label for="course" style="font-size: 20px;">Course Option:</label>
+                <select id="course" name="course">
+                    <option value="BSIT">BSIT</option>
+                    <option value="BSSW">BSSW</option>
+                    <option value="BSPA">BSPA</option>
+                    <option value="BTVTED">BTVTED</option>
+                    <option value="BSAIS">BSAIS</option>
+                    <option value="DHRS">DHRS</option>
+                </select><br><br>
+            <form style="font-size: 20px;">
+                <label for="interest">Interest:</label><br>
+                <input type="checkbox" id="interest1" name="interest1" value="Web Development">
+                <label for="interest1"> Web Development</label><br>
+                <input type="checkbox" id="interest2" name="interest2" value=" Data Science">
+                <label for="interest2">  Data Science</label><br>
+                <input type="checkbox" id="interest3" name="interest3" value=" Networking">
+                <label for="interest3">  Networking</label><br>
+                <input type="checkbox" id="interest4" name="interest4" value=" Graphic Design">
+                <label for="interest4"> Graphic Design</label><br><br>
+            </form>
+            <input type="submit" value="Enroll Now" style="font-size: 20px; background-color: rgb(126, 126, 221); text-align: center;">
+        </form>
+    </article>
+
+
+<head style="margin-left: 30px;">
+    <style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      </style>
+      </head>
+      <body>
+        <h2>Enrolled Student</h2>
+      
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+          <th>Sex</th>
+          <th>Course</th>
+          <th>Interst</th>
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>John Louise Ancaja</td>
+            <td>johnancaja@email.com</td>
+            <td>20</td>
+            <td>Male</td>
+            <td>BSIT</td>
+            <td>Web Development, Data Science</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ralph Richmond Amarillo</td>
+            <td>raplhkin@email.com</td>
+            <td>22</td>
+            <td>Male</td>
+            <td>BSSW</td>
+            <td>Networking, Graphic Design</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Emmanuel Aviles</td>
+            <td>akopamalakas08@email.com</td>
+            <td>20</td>
+            <td>Male</td>
+            <td>BSPA</td>
+            <td>Web Development</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Elysalyn Barlan</td>
+            <td>ely@email.com</td>
+            <td>19</td>
+            <td>Female</td>
+            <td>BSCS</td>
+            <td>Data Science, Networking</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Reniel Bontoc</td>
+            <td>Bonbon@email.com</td>
+            <td>24</td>
+            <td>Male</td>
+            <td>BSIT</td>
+            <td>Graphic Design</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Mery Rose Cablaida</td>
+            <td>mirini@email.com</td>
+            <td>100</td>
+            <td>Female</td>
+            <td>BSIT</td>
+            <td>Graphic Design</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Kyla Caliwan</td>
+            <td>Kylers@email.com</td>
+            <td>24</td>
+            <td>Female</td>
+            <td>BSIT</td>
+            <td>Data Science</td>
+        </tr> 
+
+    </tabl>
+
+</body>
+</html>
